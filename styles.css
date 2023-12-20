@@ -42,7 +42,7 @@ a {
 }
 
 .menu > li:hover > a {
-  color: #3e95ff;
+  color: #ff983e;
 }
 
 .menu > li:hover > a::before {
@@ -58,7 +58,7 @@ a {
   justify-content: center;
   align-items: stretch;
   width: 100%;
-  background-color: #3e95ff;
+  background-color: #ff983e;
   height: 0;
   line-height: 40px;
   box-sizing: border-box;
@@ -97,7 +97,7 @@ a {
   height: 3px;
   bottom: 3px;
   left: 0px;
-  background-color: #3e95ff;
+  background-color: #ff983e;
   transition: all 0.2s ease-in-out;
   scale: 0 0;
   visibility: hidden;

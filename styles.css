@@ -1,11 +1,11 @@
 body {
-  font-family: "Euclid Circ.menuar A", "Poppins";
+  font-family: 'Merriweather', serif;
   font-size: 18px;
   margin: 0;
   display: grid;
   place-items: center;
   height: 100vh;
-  background: #1a2027;
+  background: #fcfad7;
 }
 
 ul {

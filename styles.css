@@ -7,7 +7,15 @@ body {
   height: 100vh;
   background: #fcfad7;
 }
-
+img {
+	            max-width: 100%;
+	            height: auto;
+	            display: block; /* Remove extra space beneath the image */
+	            margin: 0 auto; /* Center the image on the page */
+				border: 2px solid Tomato;
+				padding: 2px;
+				margin: 0px;
+	}
 ul {
   margin: 0;
   padding: 0;
@@ -20,6 +28,29 @@ nav {
 
 a {
   cursor: pointer;
+}
+a:link {
+  color: Tomato;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: Tomato;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: Tomato;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: Tomato;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .menu {

@@ -2,13 +2,13 @@ body {
     font-family: 'Lora', serif;
     background: white;
     position: relative;
-    overflow-x: hidden;
+    
 }
   nav{
     top: 0;
     left:0;
     right:0;
-    height: 60px;
+    height: 70px;
     position:fixed;
     padding: 0 50 50 0;
     background-color: white;
@@ -37,6 +37,15 @@ body {
   .right{
     float: right;
   }
+  .left{
+    float: right;
+  }
+  .rightaln{
+    text-align: right;
+  }
+  .leftaln{
+    text-align: left;
+  }
   
   a:link {
     color:rgb(106 124 148);
@@ -50,20 +59,78 @@ body {
   a:hover {
     color:rgb(0,184,255);
   }
-
+  .vert{
+    vertical-align: baseline;
+    text-align: center;
+  }
+  .spaced{
+    top: 0;
+    left:0;
+    right:0;
+    height: 70px;
+    position:fixed;
+  }
   .circleimg {
-    height: 300px;
-    margin-top: 100px;
+    
+    width: 200px;
     border-radius: 50%;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    margin: 20px;
+  
   }
+  .responsiveFont{
+    display: flex;
+    font-size:22px;
+    flex: 50%;
+    text-align:center;
+    max-height: 250px;
+    
+  }
+  
+  .container{
+    width: 100%;
+    margin-top:65px;
+    margin-bottom:75px;
+    padding-bottom: 75px;
+  }
+  .contentContainer{
+    display:flex;
+    vertical-align: middle;
+    align-items: center;
+    
+    max-width: 100%;
+    max-height: 250px;
+    height: 250px;
+  }
+  @media screen and (max-width:800px) {
+    body {
+        overflow-x: scroll;
+    }
+  }
+  @media (max-width: 800px) {
+    .contentContainer {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  
   #wrapper {
-    margin-left:0;
-    margin-right:auto;
-    width:960px;
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+
+    max-width: 960px; /* 2 */
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
 }
   
   
+
+
 
 
   

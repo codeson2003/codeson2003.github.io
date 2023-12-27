@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<div id="wrapper">
+<html>
+<head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+		<title>Carson Stept</title>
+		
+    <meta property="og:title" content="Carson Stept" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="image0 (1).jpeg" />
+    <meta property="og:url" content="https://carsonstept.tech/" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora&family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+		
+		
+		<script src="https://kit.fontawesome.com/7e696a4d47.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    
+    <script src="index.js"></script>
+    <script src="plugins/jquery-2.2.4.min.js"></script>
+    <script src="plugins/jquery.appear.min.js"></script>
+    <script src="plugins/jquery.easypiechart.min.js"></script>
+    <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+			
+  
+
+  <div class="container" style="padding-top: 0px;">
+    <div class="contentContainer " style="border-bottom: 3px solid #f9f9f9; padding-bottom: 100px;">
+      <img src="updatedPortrait.JPG" class = "circleimg ">
+      <p class="responsiveFont ">Hello there, my name is Carson Stept. I'm a Computer Science student at 
+        the University of North Florida, with a passion for technology, possessing a wide range of skills.</p>
+    </div>
+    <div class="b-skills" >
+      <div class="container">
+        <h2>Technical Skills</h2>
+
+        <div class="contentContainer" style="justify-content: space-between;flex-direction: row;">
+          <div class="skill-item center-block">
+            <div class="chart-container">
+              <div class="chart " data-percent="85" data-bar-color="#dc0205">
+                <span class="percent" data-after="%">85</span>
+              </div>
+            </div>
+
+            <p>JAVA</p>
+          </div>
+          <div class="skill-item center-block">
+            <div class="chart-container">
+              <div class="chart " data-percent="70" data-bar-color="#e0b339">
+                <span class="percent" data-after="%">70</span>
+              </div>
+            </div>
+
+            <p>C</p>
+          </div>
+          <div class="skill-item center-block">
+            <div class="chart-container">
+              <div class="chart " data-percent="95" data-bar-color="#0ca1cb">
+                <span class="percent" data-after="%">95</span>
+              </div>
+            </div>
+
+            <p>SQL</p>
+          </div>
+          <div class="skill-item center-block">
+            <div class="chart-container">
+              <div class="chart " data-percent="80" data-bar-color="#72d42f">
+                <span class="percent" data-after="%">80</span>
+              </div>
+            </div>
+
+            <p>HTML/CSS</p>
+          </div>
+          <div class="skill-item center-block">
+            <div class="chart-container">
+              <div class="chart " data-percent="65" data-bar-color="#f8771f">
+                <span class="percent" data-after="%">65</span>
+              </div>
+            </div>
+
+            <p>JS</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="contentContainer" style="border-top: 2px solid #f9f9f9; padding-top: 100px;">
+      <span class = "buttonContainer">
+        <img src="image1.jpeg" class = "circleimg right">
+        <button title="Check out my resume!" onclick="openResume()" class="downloadbtn">Resume PDF</button>
+        
+      </span>
+      <span class="responsiveFont ">
+        <p>I have  a year of schooling left and I'm actively looking for internships or opportunities 
+            to aid in my transition into a software engineering role. My resume is located below the memoji. 
+            Additionally, you can find my social profiles & email at the top of this webpage.
+        </p>
+      </span>
+    </div>
+  </div>
+  <div>
+    <nav >
+      <ul>
+        <li><a href="#default" ><img src="Untitled video - Made with Clipchamp.gif" alt="Self Portrait" width="60"></a></li>
+        <span class = "right">
+          <li><a href="https://www.linkedin.com/in/carson-stept-cs2003/" target="_blank" title = "Connect with me!">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+              </a></li>
+          <li><a href="https://github.com/codeson2003" target="_blank" title = "Check out  work!">
+                <i class="fa-brands fa-github fa-2x"></i>
+              </a></li>
+          <li><a href="mailto:steptcarson@gmail.com" title = "Send me an email!">
+                <i class="fa-solid fa-paper-plane fa-2x"></i>
+              </a></li>
+        </span>
+      </ul>
+    </nav>
+  </div>
+
+ 
+  <script src="plugins/jquery-2.2.4.min.js"></script>
+ <script src="plugins/jquery.appear.min.js"></script>
+ <script src="plugins/jquery.easypiechart.min.js"></script> 
+ <script>
+    'use strict';
+
+var $window = $(window);
+
+function run()
+{
+	var fName = arguments[0],
+		aArgs = Array.prototype.slice.call(arguments, 1);
+	try {
+		fName.apply(window, aArgs);
+	} catch(err) {
+		 
+	}
+};
+ 
+/* chart
+================================================== */
+function _chart ()
+{
+	$('.b-skills').appear(function() {
+		setTimeout(function() {
+			$('.chart').easyPieChart({
+				easing: 'easeOutElastic',
+				delay: 3000,
+				barColor: '#369670',
+				trackColor: '#fff',
+				scaleColor: false,
+				lineWidth: 21,
+				trackWidth: 21,
+				size: 250,
+				lineCap: 'round',
+				onStep: function(from, to, percent) {
+					this.el.children[0].innerHTML = Math.round(percent);
+				}
+			});
+		}, 150);
+	});
+};
+ 
+
+$(document).ready(function() {
+  
+	run(_chart);
+  
+    
+});
+
+
+    
+    </script>
+  
+</body>
+</html>
+</div>
+

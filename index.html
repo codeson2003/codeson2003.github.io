@@ -17,7 +17,7 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lora&family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
 		
 		
 		<script src="https://kit.fontawesome.com/7e696a4d47.js" crossorigin="anonymous"></script>
@@ -29,9 +29,10 @@
     <script src="plugins/jquery.appear.min.js"></script>
     <script src="plugins/jquery.easypiechart.min.js"></script>
     <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-
+<body class="omgfont">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 			
   
 
@@ -41,11 +42,14 @@
       <p class="responsiveFont ">Hello there, my name is Carson Stept. I'm a Computer Science student at 
         the University of North Florida, with a passion for technology, possessing a wide range of skills.</p>
     </div>
+
+
+
     <div class="b-skills" >
       <div class="container">
         <h2>Technical Skills</h2>
 
-        <div class="contentContainer" style="justify-content: space-between;flex-direction: row;">
+        <div class="contentContainer" style="flex-direction: row; position: relative; justify-content: space-between;">
           <div class="skill-item center-block">
             <div class="chart-container">
               <div class="chart " data-percent="85" data-bar-color="#dc0205">
@@ -75,8 +79,8 @@
           </div>
           <div class="skill-item center-block">
             <div class="chart-container">
-              <div class="chart " data-percent="80" data-bar-color="#72d42f">
-                <span class="percent" data-after="%">80</span>
+              <div class="chart " data-percent="75" data-bar-color="#72d42f">
+                <span class="percent" data-after="%">75</span>
               </div>
             </div>
 
@@ -84,8 +88,8 @@
           </div>
           <div class="skill-item center-block">
             <div class="chart-container">
-              <div class="chart " data-percent="65" data-bar-color="#f8771f">
-                <span class="percent" data-after="%">65</span>
+              <div class="chart " data-percent="50" data-bar-color="#f8771f">
+                <span class="percent" data-after="%">50</span>
               </div>
             </div>
 
@@ -95,14 +99,37 @@
         </div>
       </div>
     </div>
+
+
+    
+    <div class="contentContainer buttonContainer" style="padding-bottom: 100px;">
+      <h2>Projects</h2>
+      <p class="d-inline-flex gap-1">
+        
+        <button class="downloadbtn btnTextColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Website
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>My personal portfolio page. Made with HTML, CSS, JavaScript, Font Awesome and Bootstrap</p>
+          <button class="downloadbtn buttonContainer btnTextColor" style="width: 50px; height: auto; font-size: 10px; justify-content: center; text-align: center;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="openGitHubCode()">
+            Code
+          </button>
+        </div>
+      </div>
+    </div>
+
+    
+
     <div class="contentContainer" style="border-top: 2px solid #f9f9f9; padding-top: 100px;">
       <span class = "buttonContainer">
         <img src="image1.jpeg" class = "circleimg right">
-        <button title="Check out my resume!" onclick="openResume()" class="downloadbtn">Resume PDF</button>
+        <button title="Check out my resume!" onclick="openResume()" class="downloadbtn btnTextColor">Resume PDF</button>
         
       </span>
       <span class="responsiveFont ">
-        <p>I have  a year of schooling left and I'm actively looking for internships or opportunities 
+        <p>I graduate in Spring of 2025 and I'm actively looking for internships or opportunities 
             to aid in my transition into a software engineering role. My resume is located below the memoji. 
             Additionally, you can find my social profiles & email at the top of this webpage.
         </p>
@@ -187,4 +214,5 @@ $(document).ready(function() {
 </body>
 </html>
 </div>
+
 

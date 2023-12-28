@@ -63,6 +63,9 @@ body {
     vertical-align: baseline;
     text-align: center;
   }
+  .omgfont{
+    font-family: 'Lora', serif;
+  }
   .spaced{
     top: 0;
     left:0;
@@ -109,16 +112,20 @@ body {
   .downloadbtn{
     padding: 10px 22px;
     cursor: pointer;
-    border: none;
+    border: 3px solid rgb(106 124 148);
     border-radius: 6px;
     color: white;
     cursor: pointer;
-    background-color: rgb(106 124 148);
+    background-color: white;
     font-size: 18px;
     font-weight: 400;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     transition: transform 0.2s ease;
     order: 3;
+  }
+  .btnTextColor{
+    color:  rgb(106 124 148);
+    font-weight: 500%;
   }
   .downloadbtn:active{
     transform: scale(0.96);
@@ -140,7 +147,9 @@ body {
       flex-direction: column;
       
     }
-    
+    .skill-item{
+      width: 1px;
+    }
   }
   .backroundblue{
     background-color: rgb(106 124 148);
@@ -164,7 +173,7 @@ body {
 .skill-item
 {
 	max-width: 100%;
-	width: 100px;
+	width: 70px;
 	color: black;
 }
 

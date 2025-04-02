@@ -8,7 +8,7 @@
 		
     <meta property="og:title" content="Carson Stept" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="image0 (1).jpeg" />
+    <meta property="og:image" content="assets\images\image0 (1).jpeg" />
     <meta property="og:url" content="https://carsonstept.tech/" />
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +21,10 @@
 		
 		
 		<script src="https://kit.fontawesome.com/7e696a4d47.js" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" href="styles.css">
-    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link rel = "stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/jpg" href="assets\images\favicon.jpg">
     
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
     <script src="plugins/jquery-2.2.4.min.js"></script>
     <script src="plugins/jquery.appear.min.js"></script>
     <script src="plugins/jquery.easypiechart.min.js"></script>
@@ -38,7 +38,7 @@
 
   <div class="container" style="padding-top: 0px;">
     <div class="contentContainer " style="border-bottom: 3px solid #f9f9f9; padding-bottom: 100px;">
-      <img src="updatedPortrait.JPG" class = "circleimg ">
+      <img src="assets\images\updatedPortrait.JPG" class = "circleimg ">
       <p class="responsiveFont ">Hello there, my name is Carson Stept. I'm a Computer Science student at 
         the University of North Florida, with a passion for technology, possessing a wide range of skills.</p>
     </div>
@@ -97,6 +97,21 @@
           </div>
           
         </div>
+        <div class="contentContainer" style="flex-direction: row; position: relative; justify-content: space-between;">
+          <div class="skill-item center-block">
+            <div class="chart-container">
+              <div class="chart " data-percent="80" data-bar-color="#9839e0">
+                <span class="percent" data-after="%">80</span>
+              </div>
+            </div>
+
+            <p>Python</p>
+          </div>
+          
+            
+          
+        </div>
+        
       </div>
     </div>
 
@@ -120,15 +135,15 @@
       </div>
 	<p class="d-inline-flex gap-1">
         
-        <button class="downloadbtn btnTextColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <button class="downloadbtn btnTextColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
           Sign Language Learning Tool 
         </button>
       </p>
-      <div class="collapse" id="collapseExample">
+      <div class="collapse" id="collapseExample1">
         <div class="card card-body">
           <p>Developing an application using computer vision and hand landmark detection to teach users American Sign Language (ASL) </p>
-	  <p>Implemented real-time hand gesture recognition using MediaPipe and custom geometric algorithms to detect individual signs  </p>
-	  <p>Designing a guided learning mode with progressive feedback, visual hand sign references, and detection validation.   </p>
+	        <p>Implemented real-time hand gesture recognition using MediaPipe and custom geometric algorithms to detect individual signs  </p>
+	        <p>Designing a guided learning mode with progressive feedback, visual hand sign references, and detection validation.   </p>
         </div>
       </div>
     </div>
@@ -137,14 +152,22 @@
 
     <div class="contentContainer" style="border-top: 2px solid #f9f9f9; padding-top: 100px;">
       <span class = "buttonContainer">
-        <img src="image1.jpeg" class = "circleimg right">
+        <img src="assets\images\image1.jpeg" class = "circleimg right">
         <button title="Check out my resume!" onclick="openResume()" class="downloadbtn btnTextColor">Resume PDF</button>
         
       </span>
       <span class="responsiveFont ">
-        <p>I graduate in Spring of 2025 and I'm actively looking for internships or opportunities 
-            to aid in my transition into a software engineering role. My resume is located below the memoji. 
-            Additionally, you can find my social profiles & email at the top of this webpage.
+        <p>
+          I'm graduating May 02, 2025 with a B.S. in Computer Science and am actively searching for a full-time role post-graduation.  
+          <br><br>
+          I'm open to opportunities anywhere, in roles such as Software Engineer, Computer Vision Engineer, ML/AI Engineer, Automation Engineer, and more. 
+          I'm interested in FinTech, manufacturing, automation, and defense (DoD), but I'm willing to explore other industries as well. 
+          <br><br>
+          My resume is located below the memoji. 
+          Additionally, you can find my social profiles & email at the top of this webpage.
+          
+        <p>
+
         </p>
       </span>
     </div>
@@ -152,7 +175,7 @@
   <div>
     <nav >
       <ul>
-        <li><a href="#default" ><img src="Untitled video - Made with Clipchamp.gif" alt="Self Portrait" width="60"></a></li>
+        <li><a href="#default" ><img src="assets\images\Untitled video - Made with Clipchamp.gif" alt="Self Portrait" width="60"></a></li>
         <span class = "right">
           <li><a href="https://www.linkedin.com/in/carson-stept-cs2003/" target="_blank" title = "Connect with me!">
                 <i class="fa-brands fa-linkedin fa-2x"></i>

@@ -1,5 +1,5 @@
 function openResume(){
-    var pdfUrl = 'resumeCarsonStept2025.pdf';
+    var pdfUrl = 'Carson_Stept_Resume.pdf';
 
   // Open the PDF in a new tab
   window.open(pdfUrl, '_blank');
